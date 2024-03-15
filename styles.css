@@ -1,0 +1,25 @@
+/* Définition des styles pour chaque ligne */
+.row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+/* Définition des styles pour chaque case */
+.case {
+    border: 1px solid black;
+    width: 100px; /* Ajustez la largeur selon vos besoins */
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Définition des styles pour les coins */
+.corner {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
