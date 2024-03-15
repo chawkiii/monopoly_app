@@ -1,8 +1,11 @@
+.board{
+    display: flex;
+    flex-wrap: wrap;
+}
 /* Définition des styles pour chaque ligne */
 .row {
     display: flex;
     flex-direction: row;
-    flex-wrap: nowrap;
 }
 
 /* Définition des styles pour chaque case */
@@ -25,15 +28,22 @@
 }
 
 /* Définition des styles pour la rotation de chaque rangée */
-.row:nth-child(1) {
+.row1 {
     flex-direction: row;
 }
-.row:nth-child(3) {
-    flex-direction: row-reverse;
-}
-.row:nth-child(2) {
+.row2 {
     flex-direction: column;
 }
-.row:nth-child(4) {
+.row3 {
+    flex-direction: row-reverse;
+}
+.row4 {
     flex-direction: column-reverse;
+}
+
+.cards{
+    display: flex;
+    width: 750px;
+    height: 750px;
+    background: #763b3b;
 }
