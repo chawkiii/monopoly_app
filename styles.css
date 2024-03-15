@@ -23,3 +23,17 @@
     align-items: center;
     justify-content: center;
 }
+
+/* Définition des styles pour la rotation de chaque rangée */
+.row:nth-child(1) {
+    flex-direction: row;
+}
+.row:nth-child(3) {
+    flex-direction: row-reverse;
+}
+.row:nth-child(2) {
+    flex-direction: column;
+}
+.row:nth-child(4) {
+    flex-direction: column-reverse;
+}
