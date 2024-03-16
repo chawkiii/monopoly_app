@@ -1,17 +1,16 @@
 .board{
     display: flex;
     flex-wrap: wrap;
-}
-/* Définition des styles pour chaque ligne */
-.row {
-    display: flex;
-    flex-direction: row;
+    width: 1114px;
+    height: 1114px;
+    border: 1px solid black;
+    margin: 20px auto;
 }
 
 /* Définition des styles pour chaque case */
 .case {
     border: 1px solid black;
-    width: 100px; /* Ajustez la largeur selon vos besoins */
+    width: 100px; 
     height: 100px;
     display: flex;
     align-items: center;
@@ -25,9 +24,13 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    background: red;
 }
 
 /* Définition des styles pour la rotation de chaque rangée */
+.row {
+    display: flex;
+}
 .row1 {
     flex-direction: row;
 }
@@ -41,9 +44,61 @@
     flex-direction: column-reverse;
 }
 
-.cards{
+.middle_board{
     display: flex;
-    width: 750px;
-    height: 750px;
-    background: #763b3b;
+    width: 911px;
+    height: 912px;
+    background: #3a0606;
+    border: none;
 }
+
+
+.naruto{
+    background: skyblue;
+}
+.kimetsu{
+    background: purple;
+}
+.snk{
+    background: green;
+}
+.dbz{
+    background: yellow;
+}
+.op{
+    background: red;
+}
+.bleach{
+    background: orange;
+}
+.bc{
+    background: #000;
+}
+.hunter{
+    background: blue;
+}
+
+.anime {
+    margin-bottom: 20px;
+    padding: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 5px;
+    text-align: center;
+    width: 200px;
+    display: inline-block;
+  }
+  
+/*
+  .naruto { background-color: #FFA500; } 
+  .gintama { background-color: #A52A2A; } 
+  .one-piece { background-color: #FFD700; } 
+  .bleach { background-color: #4682B4; } 
+  .black-clover { background-color: #800080; } 
+  .hunter-x-hunter { background-color: #228B22; } 
+  .snk { background-color: #000080; } 
+  .dbz { background-color: #FF0000; } 
+  .jujutsu-kaisen { background-color: #800000; } 
+  .kimetsu-no-yaiba { background-color: #8B4513; } 
+*/
+
