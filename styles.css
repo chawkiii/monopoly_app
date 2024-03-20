@@ -1,8 +1,11 @@
+body{
+    background: rgb(143, 142, 142);
+}
 .board{
     display: flex;
     flex-wrap: wrap;
-    width: 1114px;
-    height: 1114px;
+    width: 1214px;
+    height: 1214px;
     border: 1px solid black;
     margin: 20px auto;
 }
@@ -10,46 +13,113 @@
 /* Définition des styles pour chaque case */
 .case {
     border: 1px solid black;
-    width: 100px; 
-    height: 100px;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    width: 100px; 
+    height: 150px;
 }
 
-/* Définition des styles pour les coins */
-.corner {
-    width: 100px;
-    height: 100px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: red;
-}
+
 
 /* Définition des styles pour la rotation de chaque rangée */
 .row {
     display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .row1 {
     flex-direction: row;
+    width: 100%;
+    height: 150px;
+    
 }
 .row2 {
     flex-direction: column;
+    width: 150px;
+    height: calc(100% - 300px);
 }
 .row3 {
     flex-direction: row-reverse;
+    width: 100%;
+    height: 150px;
 }
 .row4 {
     flex-direction: column-reverse;
+    width: 150px;
+    height: calc(100% - 300px);
+}
+.row2 > .case,
+.row4 > .case{
+    width: 150px;
+    height: 100px;
+    overflow: hidden;
+}
+.row2 > .case{
+    transform: rotate(90deg) translate(0%,0%);
+}
+.row3 > .case{
+    flex-direction: column-reverse;
+}
+.row4 > .case{
+    flex-direction: row;
+}
+.row > .corner {
+    width: 150px;
+    height: 150px;
+    background: silver;
 }
 
 .middle_board{
-    display: flex;
-    width: 911px;
-    height: 912px;
+    width: calc(100% - 300px);
+    height: calc(100% - 300px);
     background: #3a0606;
     border: none;
+}
+
+.cardName{
+    border: inset 1px black;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 40px;
+}
+.cardImg{
+    height: 110px;
+    width: 100%;
+}
+.row2 > .case > .cardName,
+.row4 > .case > .cardName{
+    height: 40px;
+    width: 100px;
+}
+.row2 > .case > .cardImg,
+.row4 > .case > .cardImg{
+    object-fit:cover;
+    height: 110px;
+    width: 100px;
+}
+
+.row2 > .case > .cardName{
+    
+}
+.row3 > .case > .cardName{
+    
+}
+.row4 > .case > .cardName{
+    
+}
+
+.row2 > .case > .cardImg{
+    
+}
+.row3 > .case > .cardImg{
+    
+}
+.row4 > .case > .cardImg{
+    
 }
 
 
@@ -57,10 +127,10 @@
     background: skyblue;
 }
 .kimetsu{
-    background: purple;
+    background: pink;
 }
-.snk{
-    background: green;
+.fma{
+    background: blue;
 }
 .dbz{
     background: yellow;
@@ -73,11 +143,26 @@
 }
 .bc{
     background: #000;
+    color: white;
 }
 .hunter{
-    background: blue;
+    background: green;
 }
 
+
+.spoil {
+    background: #333; /* Noir ou gris foncé */
+}
+
+.filler {
+    background: #ffff99; /* Beige ou gris clair */
+}
+
+.flashback {
+    background: #f5f5dc; /* Jaune clair ou blanc */
+}
+
+/*
 .anime {
     margin-bottom: 20px;
     padding: 10px;
@@ -88,7 +173,9 @@
     width: 200px;
     display: inline-block;
   }
-  
+*/  
+
+
 /*
   .naruto { background-color: #FFA500; } 
   .gintama { background-color: #A52A2A; } 
