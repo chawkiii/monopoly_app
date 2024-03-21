@@ -1,67 +1,59 @@
-const rowsData = [
-    // Données pour la première rangée (row1)
+const casesData = [
     {
         className: 'row1',
         cases: [
-            // Données pour chaque case de la première rangée
             { className: 'corner', cardNameText: 'Départ', imgSrc: '' },
             { className: 'property naruto', cardNameText: 'Village de Konoha', imgSrc: '/images/konoha.jpg' },
-            { className: 'filler', cardNameText: 'Arc Filler', imgSrc: '' },
+            { className: 'filler', cardNameText: 'Arc Filler', imgSrc: '/images/filler.jpg' },
             { className: 'property naruto', cardNameText: 'Village de Kiri', imgSrc: '/images/kiri.jpg' },
-            { className: 'spoil', cardNameText: 'Spoil', imgSrc: '' },
+            { className: 'spoil', cardNameText: 'Spoil', imgSrc: '/images/spoil.jpg' },
             { className: 'property kaio', cardNameText: 'Kaio du Nord', imgSrc: '/images/Kaiosamanorte.jpg' },
             { className: 'property kimetsu', cardNameText: 'Quartier des plaisirs', imgSrc: '/images/le-quartier-des-plaisirs.jpg' },
-            { className: 'flashback', cardNameText: 'Arc Flashback', imgSrc: '' },
+            { className: 'flashback', cardNameText: 'Arc Flashback', imgSrc: '/images/flashback.jpg' },
             { className: 'property kimetsu', cardNameText: 'Village des Forgerons', imgSrc: '/images/Swordsmith_Village.jpg' },
             { className: 'property kimetsu', cardNameText: 'Infinite Castle', imgSrc: '/images/Infinity_Castle.jpg' },
             { className: 'corner', cardNameText: 'Prison', imgSrc: '' },
         ]
     },
-    // Données pour la quatrième rangée (row4)
     {
         className: 'row4',
         cases: [
-            // Données pour chaque case de la quatrième rangée
             { className: 'property fma', cardNameText: 'Central City', imgSrc: '/images/CentralCity.jpg' },
             { className: 'property fma', cardNameText: 'Ishval', imgSrc: '/images/Ishval.jpg' },
-            { className: 'filler', cardNameText: 'Arc Filler', imgSrc: '' },
+            { className: 'filler', cardNameText: 'Arc Filler', imgSrc: '/images/filler.jpg' },
             { className: 'property fma', cardNameText: 'Lior', imgSrc: '/images/Lior.jpg' },
             { className: 'property kaio', cardNameText: 'Kaio de l\'Ouest', imgSrc: '/images/Kaio_Oeste_Trans.jpg' },
-            { className: 'flashback', cardNameText: 'Arc Flashback', imgSrc: '' },
+            { className: 'flashback', cardNameText: 'Arc Flashback', imgSrc: '/images/flashback.jpg' },
             { className: 'property dbz', cardNameText: 'Namek', imgSrc: '/images/planet_namek___dbz_by_blackanzu_d8p5vgu-fullview.jpg' },
-            { className: 'spoil', cardNameText: 'Spoil', imgSrc: '' },
+            { className: 'spoil', cardNameText: 'Spoil', imgSrc: '/images/spoil.jpg' },
             { className: 'property dbz', cardNameText: 'Planète Vegeta', imgSrc: '/images/planet-vegeta.jpg' },
         ]
     },
-    // Données pour la deuxième rangée (row2)
     {
         className: 'row2',
         cases: [
-            // Données pour chaque case de la deuxième rangée
             { className: 'property op', cardNameText: 'Alabasta', imgSrc: '/images/alabasta.jpg' },
-            { className: 'property op', cardNameText: 'Capsule Corp', imgSrc: '/images/capsuleCorp.jpg' },
+            { className: 'property lab', cardNameText: 'Capsule Corp', imgSrc: '/images/capsuleCorp.jpg' },
             { className: 'property op', cardNameText: 'Mary Geoise', imgSrc: '/images/Mary_Geoise.jpg' },
             { className: 'property op', cardNameText: 'Wano Kuni', imgSrc: '/images/wano.jpg' },
             { className: 'property kaio', cardNameText: 'Kaio de l\'Est', imgSrc: '/images/East_Kai.jpg' },
             { className: 'property bleach', cardNameText: 'Karakura Town', imgSrc: '/images/KarakuraTown.jpg' },
-            { className: 'filler', cardNameText: 'Arc Filler', imgSrc: '' },
+            { className: 'filler', cardNameText: 'Arc Filler', imgSrc: '/images/filler.jpg' },
             { className: 'property bleach', cardNameText: 'Hueco Mundo', imgSrc: '/images/bleach-cifer-espada-hueco.jpg' },
             { className: 'property bleach', cardNameText: 'Soul Society', imgSrc: '/images/soul-society.png' },
         ]
     },
-    // Données pour la troisième rangée (row3)
     {
         className: 'row3',
         cases: [
-            // Données pour chaque case de la troisième rangée
             { className: 'corner', cardNameText: 'Parc', imgSrc: '' },
             { className: 'property bc', cardNameText: 'Royaume de Spade', imgSrc: '/images/The-Spade-Kingdom.png' },
-            { className: 'flashback', cardNameText: 'Arc Flashback', imgSrc: '' },
+            { className: 'flashback', cardNameText: 'Arc Flashback', imgSrc: '/images/flashback.jpg' },
             { className: 'property bc', cardNameText: 'Royaume de Diamond', imgSrc: '/images/Diamond_Palace.jpg' },
             { className: 'property bc', cardNameText: 'Village de Hadge', imgSrc: '/images/Paysage_de_Hadge.jpg' },
-            { className: 'property kaio', cardNameText: 'Kaio du Sud', imgSrc: '/images/kaiosud.jpg' },
+            { className: 'property kaio', cardNameText: 'Kaio du Sud', imgSrc: '/images/kaio_sud.png' },
             { className: 'property hunter', cardNameText: 'Île de la Baleine', imgSrc: '/images/Whale_Island.jpg' },
-            { className: 'property gero-lab', cardNameText: 'Laboratoire du Dr. Gero', imgSrc: '/images/Dr.GerosLabCellSaga-2.jpg' },
+            { className: 'property lab', cardNameText: 'Laboratoire du Dr. Gero', imgSrc: '/images/Dr.GerosLabCellSaga-2.jpg' },
             { className: 'property hunter', cardNameText: 'York Shin City', imgSrc: '/images/YorkShinCity.jpg' },
             { className: 'property hunter', cardNameText: 'Greed Island', imgSrc: '/images/Greed_Island.jpg' },
             { className: 'corner', cardNameText: 'Allez en Prison', imgSrc: '' },

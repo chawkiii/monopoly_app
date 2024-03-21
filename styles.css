@@ -48,7 +48,7 @@ body{
     padding: 0;
     width: 100px; 
     height: 150px;
-    
+    position: relative;
 }
 
 .row2 > .case,
@@ -76,6 +76,7 @@ body{
     text-align: center;
     display: flex;
     align-items: center;
+    justify-content: center;
     width: 100%;
     height: 40px;
 }
@@ -112,6 +113,61 @@ body{
     text-orientation:sideways;
     transform: rotate(180deg);
 }
+
+.filler > .cardName,
+.spoil > .cardName,
+.flashback > .cardName,
+.lab > .cardName,
+.kaio > .cardName{
+    display: none;
+}
+
+.row1 > .filler > .cardImg,
+.row1 > .spoil > .cardImg,
+.row1 > .flashback > .cardImg,
+.row1 > .lab > .cardImg,
+.row1 > .kaio > .cardImg,
+.row3 > .filler > .cardImg,
+.row3 > .spoil > .cardImg,
+.row3 > .flashback > .cardImg,
+.row3 > .lab > .cardImg,
+.row3 > .kaio > .cardImg{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.row1 > .filler > .cardImg,
+.row2 > .filler > .cardImg,
+.row4 > .filler > .cardImg{
+    object-position: -60px;
+}
+
+.row2 > .filler > .cardImg,
+.row2 > .spoil > .cardImg,
+.row2 > .flashback > .cardImg,
+.row2 > .lab > .cardImg,
+.row2 > .kaio > .cardImg{
+    width: 100px;
+    height: 150px;
+    transform: rotate(90deg) translate(-25% , 17%);
+}
+.row4 > .filler > .cardImg,
+.row4 > .spoil > .cardImg,
+.row4 > .flashback > .cardImg,
+.row4 > .lab > .cardImg,
+.row4 > .kaio > .cardImg{
+    width: 100px;
+    height: 150px;
+    transform: rotate(-90deg) translate(25% , 17%);
+}
+
+
+
+
+
+
 
 .naruto{
     background: skyblue;
@@ -161,36 +217,42 @@ body{
     height: calc(100% - 300px);
     background: #3a0606;
     border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.cards{
+    display: flex;
+    flex-direction: column;
+    transform: rotate(-45deg);
+}
+.cards_filler{
+    width: 300px;
+    height: 150px;
+    border: solid 2px black;
+    margin: 200px auto;
+}
+
+.cards_flashback{
+    width: 300px;
+    height: 150px;
+    border: solid 2px black;
+    margin: 200px auto;
+    transform: rotate(180deg);
 }
 
 
 
 
 
-/*
-.anime {
-    margin-bottom: 20px;
-    padding: 10px;
-    font-size: 18px;
-    font-weight: bold;
-    border-radius: 5px;
-    text-align: center;
-    width: 200px;
-    display: inline-block;
-  }
-*/  
-
-
-/*
-  .naruto { background-color: #FFA500; } 
-  .gintama { background-color: #A52A2A; } 
-  .one-piece { background-color: #FFD700; } 
-  .bleach { background-color: #4682B4; } 
-  .black-clover { background-color: #800080; } 
-  .hunter-x-hunter { background-color: #228B22; } 
-  .snk { background-color: #000080; } 
-  .dbz { background-color: #FF0000; } 
-  .jujutsu-kaisen { background-color: #800000; } 
-  .kimetsu-no-yaiba { background-color: #8B4513; } 
-*/
-
+.player-icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 30px; /* Largeur du carré */
+    height: 30px; /* Hauteur du carré */
+    background-color: blue; /* Couleur de fond bleue */
+    border: 2px solid white; /* Contour blanc */
+    border-radius: 5px; /* Bord arrondi */
+}
