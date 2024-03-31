@@ -1,3 +1,7 @@
+// boardGen.js
+
+import { casesData } from './data.js';
+
 // création du board et des cases
 const board = document.querySelector('.board');
 

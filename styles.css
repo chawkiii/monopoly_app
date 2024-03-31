@@ -225,6 +225,8 @@ body{
     display: flex;
     flex-direction: column;
     transform: rotate(-45deg);
+    justify-content: center;
+    align-items: center;
 }
 .cards_filler{
     width: 300px;
@@ -255,4 +257,11 @@ body{
     background-color: blue; 
     border: 2px solid white; 
     border-radius: 5px; 
+    z-index: 9999;
+}
+
+#play{
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
 }
